@@ -1,0 +1,12 @@
+{   "name": "zeppelin"
+  , "description": "Multi application MVC framework"
+  , "version": "0.0.1"
+  , "contributors": [
+    { "name": "Peter Elger", "email": "peter.elger@betapond.com" }
+  , { "name": "Richard Rodger", "email": "richard.rodger@gmail.com" }]
+  , "directories": { "lib": "./lib", "docs": "./docs" }
+  , "engines": { "node": ">= 0.2.3" }
+  , "main": "./lib/core/zeppelin"
+  ,"bin": { "zeppelin": "./lib/script/zeppelin.js" },
+}
+
