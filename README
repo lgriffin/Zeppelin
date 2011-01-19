@@ -9,6 +9,13 @@ Zeppelin
 January 2011: Zeppelin is currently pre-alpha software. We hope to move to a first working version within 
 the next few weeks. Documentation and further updates to follow....
 
+Running
+-------
+
+To run, cd to the Zeppelin folder and execute:
+    node lib/script/main.js
+
+
 If you would like to get involved with development of Zeppelin contact:
 
 peter dot elger at gmail
