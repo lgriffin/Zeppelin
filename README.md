@@ -21,6 +21,7 @@ Dependencies
     npm install jsDAV
     npm install underscore
     npm install node-uuid
+    npm install eyes
 
 You'll need to install a suitable driver for your database:
     npm install mongodb
