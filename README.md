@@ -15,6 +15,16 @@ Running
 To run, cd to the Zeppelin folder and execute:
     node lib/script/main.js
 
+Dependencies
+------------
+    npm install connect
+    npm install jsDAV
+    npm install underscore
+    npm install node-uuid
+
+You'll need to install a suitable driver for your database:
+    npm install mongodb
+    npm install aws-lib
 
 If you would like to get involved with development of Zeppelin contact:
 

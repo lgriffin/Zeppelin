@@ -33,9 +33,10 @@ exports.testDriver = function(beforeExit)
     assert.equal(done, true);
   });
 
-  driver = memoryDriver.imbue({print:true});
-  driver.tearUp(function() 
+  driver = memoryDriver.imbue({name:'test',print:true});
+  driver.tearUp(function(err) 
   {
+    assert.ok(!err)
     driver.removeAll(_collection, function(err, docs)
     {
       driver.create(_collection, { test1: "wibble" }, function(err, docs) 
