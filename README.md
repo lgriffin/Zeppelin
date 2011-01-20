@@ -3,33 +3,31 @@
     !! USE AT YOUR OWN RISK !!
     !!!!!!!!!!!!!!!!!!!!!!!!!!
 ## January 2011: Zeppelin is currently pre-alpha software. 
-We hope to move to a first production version within the next few weeks. Documentation and further updates to follow... @pelger
+We expect to move to a first production version within the next few weeks. Documentation and further updates to follow... @pelger
 
 ## Zeppelin
-Zeppelin is a cloud development framework that is designed to efficently run multiple applications on the same same stack.
+Zeppelin is a cloud development framework that is oriented to run multiple applications on the same node same stack.
 Zeppelin is based on two key principals:
 
  * Keep everything as simple as possible
 
  * Avoid doing work wherever possible
 
-Zeppelin has a server and a client side portion. As much processing as possible is handled on the client side, for example view templates are
-processed on the client removing load from the server.
+Zeppelin has a server and client side components. As much processing as possible is handled on the client side, for example view templates are
+processed on the client moving processing load from the server. Client side templating is handled through the excellent jquote library.
 
 ## Key Features:
 
  * Multiple applications per server stack instance
 
- * Highly scaleable approach
-
  * Distributed MVC architecture - template processing and rendering is done on the client
 
- * Built in CMS support through WebDav
+ * Built in WebDav CMS support
  
- * Simple application layout structure
+ * Simple application layout 
 
 ## Application layout and configuration
-Applications built ontop of the Zeppelin framework should have the following layout.
+Applications built ontop of the Zeppelin framework should have the following structure.
 
     hello
     |
@@ -70,7 +68,7 @@ Application configuration is through the file zconfig.js placed in the root of a
       webdav: true,
     }
 
-In order to create and deploy an application create this directory structure and point the zeppelin framework at it.
+In order to create and deploy an application create a similar directory structure and point the zeppelin framework at it.
 
 ## Framework configuration
 The framework is configured through a single file zconfig.js. This file should be passed to the framework on startup. The framework
@@ -107,7 +105,7 @@ npm install zeppelin
 ## Usage
 Zepplin can be run by executing:
 
-zeppelin frameworkconfigfile
+    zeppelin frameworkconfigfile
 
 where frameworkconfigfile is the framework configuration as specified above.
 
@@ -137,6 +135,7 @@ email: elger dot peter at gmail
 follow zeppelin on twitter: @pelger
 
 ## A Whole lotta love
+Zeppelin is built on top of the great work of its dependant modules, jquery, jquote and of course node.js
 
 Hey Hey beh beh when you shake that thing...
 
