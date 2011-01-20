@@ -6,7 +6,7 @@
 We expect to move to a first production version within the next few weeks. Documentation and further updates to follow... @pelger
 
 ## Zeppelin
-Zeppelin is a cloud development framework that is oriented to run multiple applications on the same node same stack.
+Zeppelin is a cloud development framework that is oriented to run multiple applications on the same node stack.
 Zeppelin is based on two key principals:
 
  * Keep everything as simple as possible
