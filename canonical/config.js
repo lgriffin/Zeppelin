@@ -22,7 +22,7 @@ exports.config =
                     description: "example applications",
                     hostIp: "localhost",
                     portNumber: 3500,
-                    roots: ["/Users/peterelger/work/Zeppelin/Zeppelin/examples"]}],
+                    roots: ["__PATH__"]}],
 
   environments: {test: 
                   {database: { driver: "mongo",

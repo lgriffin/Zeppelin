@@ -16,15 +16,53 @@ Zeppelin is based on two key principals:
 Zeppelin has a server and client side components. As much processing as possible is handled on the client side, for example view templates are
 processed on the client moving processing load from the server. Client side templating is handled through the excellent jquote library.
 
+You can use Zeppelin to develop web applications if you like. We do :)
+
 ## Key Features:
 
  * Multiple applications per server stack instance
 
  * Distributed MVC architecture - template processing and rendering is done on the client
 
- * Built in WebDav CMS support
+ * Built in WebDav support
  
  * Simple application layout 
+
+ * One language end to end (Javascript btw)
+
+## Getting up and running
+
+ * install dependencies (see below for list)
+
+ * install mongodb
+
+ * install the framework
+
+    npm install zeppelin
+
+Ensure that mongodb is started on its default port of 27017.
+To set up a sample installation do the following:
+
+    zeppelin install myapps
+
+Zeppelin will have created a directory called myapps under the current working directory.
+
+To create some test data for the installation 
+
+    cd myapps/quoteorama/test/unit
+    node data.js
+
+To start the installation run:
+
+   zeppelin run ./myapps/config.js 
+
+Zeppelin will start and serve up two applications which are accesible at:
+
+ * http://localhost:3500/quoteorama/index.html
+
+ * http://localhost:3500/blank/index.html
+
+For a full tutorial please see this gist - (TODO - will be in place by end of Jan 2011).
 
 ## Application layout and configuration
 Applications built ontop of the Zeppelin framework should have the following structure.
@@ -71,7 +109,7 @@ Application configuration is through the file zconfig.js placed in the root of a
 In order to create and deploy an application create a similar directory structure and point the zeppelin framework at it.
 
 ## Framework configuration
-The framework is configured through a single file zconfig.js. This file should be passed to the framework on startup. The framework
+The framework is configured through a single file config.js. This file should be passed to the framework on startup. The framework
 configuration file should look like the following:
 
     exports.config = 
@@ -97,20 +135,6 @@ configuration file should look like the following:
                                port: 27017}}},
     }
 
-## Installation
-Zeppelin should be installed through npm:
-
-npm install zeppelin
-
-## Usage
-Zepplin can be run by executing:
-
-    zeppelin frameworkconfigfile
-
-where frameworkconfigfile is the framework configuration as specified above.
-
-For a full tutorial please see this gist - (TODO - will be in place by end of Jan 2011).
-
 ## Dependencies
 Zeppelin requires the following modules:
 
@@ -122,7 +146,7 @@ Zeppelin requires the following modules:
  * npm install mongodb
  * npm install expresso
 
-You'll need to install a suitable driver for your database:
+You will need to install a suitable driver for your database:
     npm install mongodb
     npm install aws-lib
 

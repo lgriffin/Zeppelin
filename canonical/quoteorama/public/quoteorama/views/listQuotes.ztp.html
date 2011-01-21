@@ -1,0 +1,8 @@
+<table>
+  <% for(var idx = 0; idx < this.data.length; ++idx) { %>
+  <tr id="<%=this.data[idx]._id%>_tr"><td><div id="<%=this.data[idx]._id%>_div" > <%= this.data[idx].quote %></div></td>
+      <td><input type="button" value="edit" onclick="javascript:edit('<%= this.data[idx]._id %>')"/><td>
+      <td><input type="button" value="delete" onclick="javascript:remove('<%= this.data[idx]._id %>')"/></td></tr>
+  <% } %>
+</table>
+
