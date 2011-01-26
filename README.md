@@ -144,13 +144,16 @@ Zeppelin requires the following modules:
  * npm install node-uuid
  * npm install eyes
  * npm install mongodb
+ * npm install aws-lib
  * npm install expresso
 
 You will need to install a suitable driver for your database:
     npm install mongodb
-    npm install aws-lib
+    npm install simpledb
 
-Currently mongodb is the default data store.
+Currently mongodb is the default data store. You can also use Amazon SimpleDB.
+There is an in-memory database for testing.
+
 
 ## Getting involved
 We activly welcome contributions to Zeppelin. Connect though:
