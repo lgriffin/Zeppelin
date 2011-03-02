@@ -3,7 +3,7 @@
  * test quote data
  */
 
-require.paths.unshift('/home/pelger/work/node/node-mongodb-native/lib/mongodb');
+
 var sys = require('sys');
 var Db = require('mongodb').Db;
 var Connection = require('mongodb').Connection;
